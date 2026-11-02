@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heistboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Heistboard</h1>
+        <p>Every great heist starts with a plan.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="briefing-heading">
+            <h2 id="briefing-heading">Mission Briefing</h2>
+
+             <form id="mission-form">
+                <label for="mission-name">Mission Name</label>
+                <input type="text" id="mission-name" name="mission-name" maxlength="60" required>
+
+                <label for="mission-description">Mission Description</label>
+                <textarea id="mission-description" name="mission-description" maxlength="300" required></textarea>
+
+                <button type="submit">Create Mission</button>
+             </form>
+        </section>
+    </main>
+</body>
+</html>
