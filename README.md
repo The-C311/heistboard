@@ -5,14 +5,18 @@ will create fictional heists, organize objectives, and assign crew roles.
 
 ## Project Status
 
-In development. The first user story adds the mission briefing
-form with required mission name and description fields.
+**v0.2 — Display the Mission Briefing**
 
-The form does not yet create or save missions.
+Submit a mission name and description to display the current briefing
+without reloading the page. A new valid submission replaces the briefing.
+Entries containing only spaces show a validation message and preserve
+the current briefing. Mission names are limited to 60 characters and
+descriptions to 300 characters.
+
+Missions reset when the page is refreshed; saving is planned for a later version.
 
 ## Planned Features
 
-- Create and display a mission briefing.
 - Add and complete mission objectives.
 - Assign Infiltrator, Tech Specialist, and Muscle crew roles.
 - Save mission progress in the browser using localStorage.

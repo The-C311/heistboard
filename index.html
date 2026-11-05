@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +25,13 @@
                 <textarea id="mission-description" name="mission-description" maxlength="300" required></textarea>
 
                 <button type="submit">Create Mission</button>
+                <p id="mission-error" role="alert"></p>
              </form>
+        </section>
+        <section aria-labelledby="current-mission-heading" aria-live="polite">
+            <h2 id="current-mission-heading">Current Mission</h2>
+            <h3 id="current-mission-name">No mission yet</h3>
+            <p id="current-mission-description">Complete the briefing form to get started.</p>
         </section>
     </main>
 </body>
