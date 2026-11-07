@@ -1,0 +1,19 @@
+#objective-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#objective-list li {
+  margin-block: 0.5rem;
+}
+
+#objective-list label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+#objective-list input:checked + span {
+  text-decoration: line-through;
+}

@@ -21,3 +21,37 @@ missionForm.addEventListener("submit", (event) => {
   currentMissionName.textContent = name;
   currentMissionDescription.textContent = description;
 });
+
+const objectiveForm = document.querySelector("#objective-form");
+const objectiveText = document.querySelector("#objective-text");
+const objectiveError = document.querySelector("#objective-error");
+const objectiveList = document.querySelector("#objective-list");
+const objectivesEmpty = document.querySelector("#objectives-empty");
+
+objectiveForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const text = objectiveText.value.trim();
+
+  if (!text) {
+    objectiveError.textContent = "Enter an objective.";
+    objectiveText.focus();
+    return;
+  }
+
+  const item = document.createElement("li");
+  const label = document.createElement("label");
+  const checkbox = document.createElement("input");
+  const description = document.createElement("span");
+
+  checkbox.type = "checkbox";
+  description.textContent = text;
+  label.append(checkbox, description);
+  item.append(label);
+  objectiveList.append(item);
+
+  objectivesEmpty.hidden = true;
+  objectiveError.textContent = "";
+  objectiveText.value = "";
+  objectiveText.focus();
+});
