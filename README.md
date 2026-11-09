@@ -5,7 +5,7 @@ will create fictional heists, organize objectives, and assign crew roles.
 
 ## Project Status
 
-**v0.3 — Add and Complete Mission Objectives**
+**v0.4 — Assign Crew Roles**
 
 Submit a mission name and description to display the current briefing
 without reloading the page. A new valid submission replaces the briefing.
@@ -18,12 +18,17 @@ checkbox; checking it crosses out its text, and unchecking it restores the
 text. New objectives keep the existing checklist. Empty or whitespace-only
 objectives are rejected.
 
-The briefing and objectives reset when the page is refreshed; saving is
-planned for a later version.
+Enter a crew member's name for the Infiltrator, Tech Specialist, and Muscle
+roles, then select **Assign Crew** to display the assignments. All three
+names are required; whitespace-only names are rejected without changing
+the current crew. A valid resubmission updates the assignments and keeps
+the briefing and objectives intact.
+
+The briefing, objectives, and crew reset when the page is refreshed;
+saving is planned for a later version.
 
 ## Planned Features
 
-- Assign Infiltrator, Tech Specialist, and Muscle crew roles.
 - Save mission progress in the browser using localStorage.
 
 ## Technologies

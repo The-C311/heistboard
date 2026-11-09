@@ -44,6 +44,33 @@
             <p id="objectives-empty">No objectives yet. Add your first objective above.</p>
             <ul id="objective-list"></ul>
         </section>
+        <section aria-labelledby="crew-heading">
+            <h2 id="crew-heading">Crew Roles</h2>
+            <form id="crew-form">
+                <label for="crew-infiltrator">Infiltrator</label>
+                <input type="text" id="crew-infiltrator" name="crew-infiltrator" required>
+
+                <label for="crew-tech">Tech Specialist</label>
+                <input type="text" id="crew-tech" name="crew-tech" required>
+
+                <label for="crew-muscle">Muscle</label>
+                <input type="text" id="crew-muscle" name="crew-muscle" required>
+
+                <button type="submit">Assign Crew</button>
+                <p id="crew-error" role="alert"></p>
+            </form>
+            <div aria-live="polite">
+                <h3>Current Crew</h3>
+                <dl>
+                    <dt>Infiltrator</dt>
+                    <dd id="current-infiltrator">Unassigned</dd>
+                    <dt>Tech Specialist</dt>
+                    <dd id="current-tech">Unassigned</dd>
+                    <dt>Muscle</dt>
+                    <dd id="current-muscle">Unassigned</dd>
+                </dl>
+            </div>
+        </section>
     </main>
 </body>
 </html>

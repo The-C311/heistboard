@@ -55,3 +55,28 @@ objectiveForm.addEventListener("submit", (event) => {
   objectiveText.value = "";
   objectiveText.focus();
 });
+
+const crewForm = document.querySelector("#crew-form");
+const crewError = document.querySelector("#crew-error");
+const crewRoles = ["infiltrator", "tech", "muscle"].map((role) => ({
+  input: document.querySelector(`#crew-${role}`),
+  display: document.querySelector(`#current-${role}`),
+}));
+
+crewForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const names = crewRoles.map(({ input }) => input.value.trim());
+  const emptyIndex = names.findIndex((name) => !name);
+
+  if (emptyIndex !== -1) {
+    crewError.textContent = "Enter a crew member's name for each role.";
+    crewRoles[emptyIndex].input.focus();
+    return;
+  }
+
+  crewError.textContent = "";
+  crewRoles.forEach(({ display }, index) => {
+    display.textContent = names[index];
+  });
+});
