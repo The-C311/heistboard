@@ -5,7 +5,16 @@ will create fictional heists, organize objectives, and assign crew roles.
 
 ## Project Status
 
-**v0.4 — Assign Crew Roles**
+**v0.5 — Style the Mission Board**
+
+The mission board uses midnight-blue panels, gold accents, and a subtle
+blueprint grid. The layout stacks on smaller screens, with visible keyboard
+focus, readable form fields, and green crossed-out completed objectives.
+All styling uses local CSS with system fonts; no external assets are required.
+
+The final palette combines the original Midnight & Gold surfaces with blue
+buttons and white button text. Crew assignments use blue for Infiltrator,
+green for Tech Specialist, and pink for Muscle.
 
 Submit a mission name and description to display the current briefing
 without reloading the page. A new valid submission replaces the briefing.

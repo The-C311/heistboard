@@ -9,14 +9,17 @@
 </head>
 <body>
     <header>
+        <p class="eyebrow">Covert operations / Planning desk</p>
         <h1>Heistboard</h1>
         <p>Every great heist starts with a plan.</p>
+        <span class="board-badge">Mission control</span>
     </header>
 
     <main>
         <section aria-labelledby="briefing-heading">
             <h2 id="briefing-heading">Mission Briefing</h2>
 
+            <p class="section-note">Set the target. Write the plan.</p>
              <form id="mission-form">
                 <label for="mission-name">Mission Name</label>
                 <input type="text" id="mission-name" name="mission-name" maxlength="60" required>
@@ -35,6 +38,7 @@
         </section>
         <section aria-labelledby="objectives-heading">
             <h2 id="objectives-heading">Mission Objectives</h2>
+            <p class="section-note">One step closer to a clean getaway.</p>
             <form id="objective-form">
                 <label for="objective-text">Objective</label>
                 <input type="text" id="objective-text" name="objective-text" required>
@@ -46,6 +50,7 @@
         </section>
         <section aria-labelledby="crew-heading">
             <h2 id="crew-heading">Crew Roles</h2>
+            <p class="section-note">The right crew makes all the difference.</p>
             <form id="crew-form">
                 <label for="crew-infiltrator">Infiltrator</label>
                 <input type="text" id="crew-infiltrator" name="crew-infiltrator" required>
@@ -72,5 +77,6 @@
             </div>
         </section>
     </main>
+    <footer>Plan carefully. Move quietly. <span>Progress lasts for this session only.</span></footer>
 </body>
 </html>
